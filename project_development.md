@@ -24,5 +24,13 @@ what i wanna do is create a thingamagig that can be turned on when leaving home 
 |door is opened with sound|ultrasonic sensor detects distance change and sound detector detects sound|the buzzer does not buzz|
 ### Nonfunctional requirements
 1. The distance from the door can be changed to allow it to be used for other doors. perchance
-## Algorithims
+## Algorithms
 ### Main flowchart
+![alt text](image.png)
+### Subroutine Pseudocode
+#### Check_sound
+if sound sensor detects sound:
+    Sound = True
+else:
+    sound = false
+#### Check_distance

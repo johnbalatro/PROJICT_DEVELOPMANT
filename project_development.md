@@ -33,4 +33,17 @@ if sound sensor detects sound:
     Sound = True
 else:
     sound = false
+return sound
 #### Check_distance
+trigger sensor low
+utime.sleep 
+trigger sensor high
+utime sleep 5
+trigger sensor low
+while echovalue is 0
+    signaloff = utime ticks
+while echovalue is 1
+    signalon = utime ticks
+timepassed = signalon - signaloff
+distance = (timepassed * 0.0343) / 2
+return distance

@@ -30,22 +30,39 @@ what i wanna do is create a thingamagig that can be turned on when leaving home 
 ### Subroutine Pseudocode
 #### Check_sound
 if sound sensor detects sound:
+
     Sound = True
+
 else:
+
     sound = false
+
 return sound
+
 #### Check_distance
 trigger sensor low
+
 utime.sleep 
+
 trigger sensor high
+
 utime sleep 5
+
 trigger sensor low
+
 while echovalue is 0
+
     signaloff = utime ticks
+
 while echovalue is 1
+
     signalon = utime ticks
+
 timepassed = signalon - signaloff
+
 distance = (timepassed * 0.0343) / 2
+
 return distance
+
 ## Development and integration
-while the code itself for the program is written in thonny i will copy and paste the code into the markdown documentation so you can read it
+while the code itself for the program is written in thonny i will copy and paste the code into the markdown documentation so you can read it.

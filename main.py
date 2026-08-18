@@ -3,9 +3,11 @@ from time import sleep
 import utime
 adc = ADC(0)
 digital = Pin(18,Pin.IN, Pin.PULL_UP)
-led = Pin(16, Pin.OUT)
+button = Pin(16, Pin.IN, Pin.PULL_UP)
 trigger = Pin(14, Pin.OUT)
 echo = Pin(15, Pin.IN)
+mid = 1.95
+max = 1.97
 def ultra():
    trigger.low()
    utime.sleep_us(2)
@@ -27,8 +29,21 @@ def sond():
     digital_value = digital.value()
     sleep(0.5)
     return Volt
-while
-sond()
-oliver_boliver_bolognese_greg_green_gaster_offtofindthetreasureandvaluevaluethefun = sond()
-ultra()
-gregoldy = ultra()
+def menu():
+    while True:
+        if button.value() == 0:
+            print()
+        else:
+            accordingtoallknownlawsofaviationthereisnowayabeeshouldbeabletofly = True
+            return accordingtoallknownlawsofaviationthereisnowayabeeshouldbeabletofly
+        if accordingtoallknownlawsofaviationthereisnowayabeeshouldbeabletofly == True:
+            while True:
+                ultra()
+                sond()
+                sound = sond()
+                distance = ultra()
+                if sound < mid or sound > max:
+                    perchance = True
+                else:
+                    perchance = False
+                

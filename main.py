@@ -1,13 +1,18 @@
-from machine import Pin, ADC
+from machine import Pin, ADC, PWM
 from time import sleep
 import utime
 adc = ADC(0)
+buzzer = PWM(Pin(13))
+buzzer.freq(500)
+perchance = True
 digital = Pin(18,Pin.IN, Pin.PULL_UP)
 button = Pin(16, Pin.IN, Pin.PULL_UP)
 trigger = Pin(14, Pin.OUT)
 echo = Pin(15, Pin.IN)
-mid = 1.95
-max = 1.97
+mid = 1.96
+max = 2
+greg = 12.5
+accordingtoallknownlawsofaviationthereisnowayabeeshouldbeabletofly = True
 def ultra():
    trigger.low()
    utime.sleep_us(2)
@@ -32,18 +37,24 @@ def sond():
 def menu():
     while True:
         if button.value() == 0:
-            print()
+            print("off")
         else:
-            accordingtoallknownlawsofaviationthereisnowayabeeshouldbeabletofly = True
-            return accordingtoallknownlawsofaviationthereisnowayabeeshouldbeabletofly
-        if accordingtoallknownlawsofaviationthereisnowayabeeshouldbeabletofly == True:
-            while True:
-                ultra()
-                sond()
-                sound = sond()
-                distance = ultra()
-                if sound < mid or sound > max:
-                    perchance = True
-                else:
-                    perchance = False
-                
+            IT = True
+            if accordingtoallknownlawsofaviationthereisnowayabeeshouldbeabletofly == True:
+                while IT == True:
+                    ultra()
+                    sond()
+                    sound = sond()
+                    distance = ultra()
+                    print(sound)
+                    print(distance)
+                    if sound < mid or sound > max:
+                       perchance = True
+                    else:
+                       perchance = False
+                    if distance > greg:
+                        if perchance == False:
+                           print("alarm")
+                    if button.value() != 0:
+                        IT = False
+menu()

@@ -2,8 +2,7 @@ from machine import Pin, ADC, PWM
 from time import sleep
 import utime
 adc = ADC(0)
-buzzer = PWM(Pin(13))
-buzzer.freq(500)
+buzzer = PWM(Pin(0))
 perchance = True
 digital = Pin(18,Pin.IN, Pin.PULL_UP)
 button = Pin(16, Pin.IN, Pin.PULL_UP)
@@ -54,7 +53,9 @@ def menu():
                        perchance = False
                     if distance > greg:
                         if perchance == False:
-                           print("alarm")
+                           while True:
+                               buzzer.freq(500)
+                               buzzer.duty_u16(1000)
                     if button.value() != 0:
                         IT = False
 menu()

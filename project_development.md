@@ -70,6 +70,18 @@ while the code itself for the program is written in thonny i will copy and paste
 ### Peer Evaluation
 | person | positive | Negative| Implication | ranking |
 -----------|---------|-----|--------|------|
-| oliver big big |     | everything this sucks | redo it all over again there is no saving this| DIE/10 |
-| liam cool cool |Highly functional very working. I had a play and the thingo thingo is ver intuitive and works as intended| Uhhhhh  Im really bad at doing negatives but like I couldnt test the sound sensor because Im doing this in class. Also i accidentally unwired the buzzer and that isnt cool. | Very cool project, would love to test the noise sensor and the project on an actual door| 10/10 :D|
+| oliver|     | everything this sucks | redo it all over again there is no saving this| 0/10 |
+| liam |Highly functional very working. I had a play and the thingo thingo is ver intuitive and works as intended| Uhhhhh  Im really bad at doing negatives but like I couldnt test the sound sensor because Im doing this in class. Also i accidentally unwired the buzzer and that isnt cool. | Very cool project, would love to test the noise sensor and the project on an actual door| 10/10 :D|
 ### Final Evaluation
+#### functional criteria
+i belive that i met my criteria to an acceptable level as it does do what i wanted it to do without issue however i do have some issues such as how i was unable to make the project activate and deactivate at the press of a button like i originally hoped it would be able to do. regardless it still functions and is capable of serving its intended purpose.
+#### non functional criteria
+how my project met the criteria is a bit hard to discern as i had next to no real requirements outside of functionality. i do belive i met the requirements though as it is possible to change the accaptabvle distance level by changeing the variable "greg".
+#### performance in relation to need
+i would say that the project works well in relation to the need as it is able to trigger properly and start the alarm when the sound requirment is not met. it does not fit the need perfectly but that is more due to hardware limitations such as the inablity to actualy notify anyone as the buzzer is not loud enough and the fect that the sound sensor is still quite innacurate
+#### project management
+i would say thet my managment of my time for the project was quite poor as i only truely started working on it around wednesday the 19th, and even before then i spent 3 lessons just twisting the sensitivity dial on the sound sensor. but even so i was still able to complete the project to a level im ok with.
+#### peer feedback
+the peer feedback i got was pretty mixed with liam giving generaly a generaly positive review and oliver giving an incredibly negative review but neither really gave me any idea on how i can improve.
+#### future improvments
+if i were to do this project gain i would first improve my wiremanagement so i would know where everything is going as well as actualy implementing the button like i originaly planned to and making the sound detector function better and be more open to noise.

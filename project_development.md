@@ -66,3 +66,10 @@ return distance
 
 ## Development and integration
 while the code itself for the program is written in thonny i will copy and paste the code into the markdown documentation so you can read it.
+## Evaluation
+### Peer Evaluation
+| person | positive | Negative| Implication | ranking |
+-----------|---------|-----|--------|------|
+| oliver big big |     | everything this sucks | redo it all over again there is no saving this| DIE/10 |
+| liam cool cool |Highly functional very working. I had a play and the thingo thingo is ver intuitive and works as intended| Uhhhhh  Im really bad at doing negatives but like I couldnt test the sound sensor because Im doing this in class. Also i accidentally unwired the buzzer and that isnt cool. | Very cool project, would love to test the noise sensor and the project on an actual door| 10/10 :D|
+### Final Evaluation
